@@ -22,6 +22,7 @@ def returnUrl():
 
 root=tk.Tk()
 root.title("Envirofy")
+root.configure(bg="#383838")
 
 label = tk.Label(root, text="Envirofy notifications app")
 label.pack()
@@ -32,7 +33,7 @@ resultLabel.pack()
 entry = tk.Entry(root)
 entry.pack()
 
-entryButton = tk.Button(root, text="Select", command = returnUrl)
+entryButton = tk.Button(root, text="Select", command = returnUrl, width=15, bg="#FFFFFF")
 entryButton.pack()
 
 root.mainloop()
